@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A1B9A"
+    android:onClick="voltar"
+    tools:context=".ForcaActivity">
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5E35B1"
+        android:text="Voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23:00"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/forcaImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/comunismo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnVoltar" />
+
+    <TextView
+        android:id="@+id/textDica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Dica: Fruta vermelha"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forcaImg" />
+
+    <LinearLayout
+        android:id="@+id/layoutLetras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textDica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Teclado -->
+    <GridLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:columnCount="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDica">
+
+        <!-- Letras como botões -->
+        <!-- Repita até Z -->
+
+        <Button
+            android:id="@+id/btLetraA"
+
+            style="@style/BotaoLetra"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/btLetraB"
+            style="@style/BotaoLetra"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/btLetraC"
+            style="@style/BotaoLetra"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btLetraD"
+            style="@style/BotaoLetra"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/btLetraE"
+            style="@style/BotaoLetra"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/btLetraF"
+            style="@style/BotaoLetra"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/btLetraG"
+            style="@style/BotaoLetra"
+            android:text="G" />
+
+        <Button
+            android:id="@+id/btLetraH"
+            style="@style/BotaoLetra"
+            android:text="H" />
+
+        <Button
+            android:id="@+id/btLetraI"
+            style="@style/BotaoLetra"
+            android:text="I" />
+
+        <Button
+            android:id="@+id/btLetraJ"
+            style="@style/BotaoLetra"
+            android:text="J" />
+
+        <Button
+            android:id="@+id/btLetraK"
+            style="@style/BotaoLetra"
+            android:text="K" />
+
+        <Button
+            android:id="@+id/btLetraL"
+            style="@style/BotaoLetra"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/btLetraM"
+            style="@style/BotaoLetra"
+            android:text="M" />
+
+        <Button
+            android:id="@+id/btLetraN"
+            style="@style/BotaoLetra"
+            android:text="N" />
+
+        <Button
+            android:id="@+id/btLetraO"
+            style="@style/BotaoLetra"
+            android:text="O" />
+
+        <Button
+            android:id="@+id/btLetraP"
+            style="@style/BotaoLetra"
+            android:text="P" />
+
+        <Button
+            android:id="@+id/btLetraQ"
+            style="@style/BotaoLetra"
+            android:text="Q" />
+
+        <Button
+            android:id="@+id/btLetraR"
+            style="@style/BotaoLetra"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/btLetraS"
+            style="@style/BotaoLetra"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/btLetraT"
+            style="@style/BotaoLetra"
+            android:text="T" />
+
+        <Button
+            android:id="@+id/btLetraU"
+            style="@style/BotaoLetra"
+            android:text="U" />
+
+        <Button
+            android:id="@+id/btLetraV"
+            style="@style/BotaoLetra"
+            android:text="V" />
+
+        <Button
+            android:id="@+id/btLetraW"
+            style="@style/BotaoLetra"
+            android:text="W" />
+
+        <Button
+            android:id="@+id/btLetraX"
+            style="@style/BotaoLetra"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/btLetraY"
+            style="@style/BotaoLetra"
+            android:text="Y" />
+
+        <Button
+            android:id="@+id/btLetraZ"
+            style="@style/BotaoLetra"
+            android:text="Z" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
