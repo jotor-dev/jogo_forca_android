@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#6A1B9A"
-    tools:context=".CategoriaActivity">
+    tools:context=".activities.CategoriaActivity">
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,186 +16,150 @@
         android:padding="16dp">
 
         <LinearLayout
+            android:id="@+id/llCategorias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:title="Categorias"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
+                android:id="@+id/tvEscolherCategoria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:text="Escolha a Categoria"
                 android:textColor="#FFF"
                 android:textSize="20sp"
-                android:layout_marginBottom="16dp"
                 android:textStyle="bold" />
 
             <!-- Lista de categorias -->
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/comunismo"
-                    android:background="@drawable/background_circulo" />
+                    android:background="@drawable/background_circulo"
+                    android:src="@drawable/comunismo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Entretenimento"
-                    android:textColor="#FFF"
                     android:layout_marginStart="16dp"
-                    android:textSize="16sp"/>
+                    android:text="Frutas"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/comunismo"
-                    android:background="@drawable/background_circulo" />
+                    android:background="@drawable/background_circulo"
+                    android:src="@drawable/comunismo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Entretenimento"
-                    android:textColor="#FFF"
                     android:layout_marginStart="16dp"
-                    android:textSize="16sp"/>
+                    android:text="Animais"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/comunismo"
-                    android:background="@drawable/background_circulo" />
+                    android:background="@drawable/background_circulo"
+                    android:src="@drawable/comunismo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
                     android:text="Entretenimento"
                     android:textColor="#FFF"
-                    android:layout_marginStart="16dp"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/comunismo"
-                    android:background="@drawable/background_circulo" />
+                    android:background="@drawable/background_circulo"
+                    android:src="@drawable/comunismo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Entretenimento"
-                    android:textColor="#FFF"
                     android:layout_marginStart="16dp"
-                    android:textSize="16sp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:src="@drawable/comunismo"
-                    android:background="@drawable/background_circulo" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Entretenimento"
+                    android:text="Signo"
                     android:textColor="#FFF"
-                    android:layout_marginStart="16dp"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/comunismo"
-                    android:background="@drawable/background_circulo" />
+                    android:background="@drawable/background_circulo"
+                    android:src="@drawable/comunismo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Entretenimento"
-                    android:textColor="#FFF"
                     android:layout_marginStart="16dp"
-                    android:textSize="16sp"/>
+                    android:text="Objetos"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <!-- Repita acima para mais categorias -->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Escolha a Dificuldade"
-                android:textColor="#FFF"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="8dp" />
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Fácil"
-                    android:backgroundTint="#BA68C8"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Médio"
-                    android:backgroundTint="#FFEB3B"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Difícil"
-                    android:backgroundTint="#D50000"/>
-            </LinearLayout>
+                android:gravity="center"
+                android:orientation="horizontal" />
 
             <Button
                 android:id="@+id/btIniciarJogo"

@@ -4,6 +4,6 @@
         android:id="@+id/miMenuActivity"
         android:title="Menu"/>
     <item
-        android:id="@+id/miCategoriaActivity"
-        android:title="Categorias"/>
+        android:id="@+id/miRankingActivity"
+        android:title="Ranking"/>
 </menu>

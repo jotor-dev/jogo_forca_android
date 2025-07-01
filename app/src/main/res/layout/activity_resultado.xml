@@ -5,9 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultadoActivity">
+    tools:context=".activities.ResultadoActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Resultado"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#6A1B9A"
@@ -16,27 +26,30 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/tvParabens"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Parabéns"
+            android:textColor="#FFF"
             android:textSize="32sp"
-            android:textStyle="bold"
-            android:textColor="#FFF" />
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/tvVoceVenceu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="você venceu!"
-            android:textSize="24sp"
-            android:textColor="#FFF" />
+            android:textColor="#FFF"
+            android:textSize="24sp" />
 
         <TextView
+            android:id="@+id/tvPontuacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Score: 00:00"
-            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:text="00:00"
             android:textColor="#FFF"
-            android:layout_marginTop="16dp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
 

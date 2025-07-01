@@ -32,11 +32,12 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.android.flexbox:flexbox:3.0.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.preference)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
