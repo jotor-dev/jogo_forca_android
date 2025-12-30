@@ -33,7 +33,7 @@ Este projeto foi desenvolvido em **Java** utilizando o Android Studio. Ele demon
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/jotor-dev/jogo_forca_android.git](https://github.com/jotor-dev/jogo_forca_android.git)
+    git clone https://github.com/jotor-dev/jogo_forca_android.git
     ```
 2.  **Abra o Android Studio.**
 3.  Vá em `File > Open` e selecione a pasta do projeto clonado.
